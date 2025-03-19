@@ -38,6 +38,7 @@ extensions=(
   "tailscale@joaophi.github.com"
   "user-theme@gnome-shell-extensions.gcampax.github.com"
   #"window-list@gnome-shell-extensions.gcampax.github.com"
+
 )
 
 packages=(
