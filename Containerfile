@@ -14,8 +14,17 @@ FROM ghcr.io/ublue-os/silverblue-main:gts
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
 COPY build.sh /tmp/build.sh
+COPY system_files /
+COPY scripts /scripts
+#COPY --chmod=755 scripts /scripts
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
+    /scripts/just.sh && \
+#    /scripts/karg.sh && \
+#    /scripts/dconf.sh && \
+#    /scripts/msfont.sh && \
+    /scripts/install_packages.sh && \
+    /scripts/cleanup.sh && \
     ostree container commit
     
