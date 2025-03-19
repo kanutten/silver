@@ -10,7 +10,7 @@ utility=(
 )
 
 extensions=(
-  "gnome-shell-extension-just-perfection.noarch",
+ # "gnome-shell-extension-just-perfection.noarch",
  # "thinkpad-battery-threshold@marcosdalvarez.org",
  # "caffeine@patapon.info",
  # "solaar-extension@sidevesh",
